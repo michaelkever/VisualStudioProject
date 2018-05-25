@@ -1,0 +1,276 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>Test Name</title>
+</head>
+<body>
+    <!-- home, name, nav-->
+    <div class="container-fluid" id="home">
+        <div class="site-name">
+            <a class="site-name" href="/" title="Home">Test Name</a>
+        </div>
+        <hr>
+        <div id="site-slogan">Software Developer</div>
+        <div class="header" id="myHeader">
+            <div class="homepage-nav-buttons">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="navbar-nav mx-auto">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#skills" class="btn btn-outline-dark smooth-scroll" role="button" aria-pressed="true">Skills</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#port" class="btn btn-outline-dark smooth-scroll" role="button" aria-pressed="true">Portfolio</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#contact" class="btn btn-outline-dark smooth-scroll" role="button" aria-pressed="true">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- end home, name, nav -->
+    <div class="content">
+        <!-- Skills -->
+        <section id="skills">
+            <div class="container-fluid">
+                <h1 class="skills">Skills</h1>
+                <p class="skills-buttons">
+                    <a class="btn btn-outline-dark" data-toggle="collapse" href="#webdev" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Web Development
+                    </a>
+                    <a class="btn btn-outline-dark" data-toggle="collapse" href="#vercon" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Version Control
+                    </a>
+                    <a class="btn btn-outline-dark" data-toggle="collapse" href="#it" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        IT
+                    </a>
+                    <a class="btn btn-outline-dark" data-toggle="collapse" href="#soon" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Coming Soon
+                    </a>
+                </p>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse" id="webdev">
+                            <div class="card card-body" style="background-color:#BFC2C7">
+                                <h5>Web Development</h5>
+                                <ul class="list-unstyled">
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>Bootstrap4</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse" id="vercon">
+                            <div class="card card-body" style="background-color:#BFC2C7">
+                                <h5>Version Control</h5>
+                                <ul class="list-unstyled">
+                                    <li>Git</li>
+                                    <li>GitHub - <a href="#">GitHub Profile</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse" id="it">
+                            <div class="card card-body" style="background-color:#BFC2C7">
+                                <h5>Information Technology</h5>
+                                <ul class="list-unstyled">
+                                    <li>Software Troubleshooting</li>
+                                    <li>Hardware Troubleshooting</li>
+                                    <li>Network Diagnostics and Troubleshooting</li>
+                                    <li>Knowledge Base Management</li>
+                                    <li>Process Improvement</li>
+                                    <li>High Severity Incident Response</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse" id="soon">
+                            <div class="card card-body" style="background-color:#BFC2C7">
+                                <h5>Coming Soon</h5>
+                                <ul class="list-unstyled">
+                                    <li>C#</li>
+                                    <li>JavaScript</li>
+                                    <li>SQL</li>
+                                    <li>ASP.NET</li>
+                                    <li>Visual Studio and TFS</li>
+                                    <li>And more...</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- End Skills -->
+        <!-- Portfolio -->
+        <section id="port">
+            <div class="container">
+                <h1 class="portfolio">Portfolio</h1>
+                <div class="card-deck">
+                    <div class="port card text-center" style="width: 18rem;">
+                        <!-- Make the picture link to the modal -->
+                        <a href="#ProjetModal1" role="button" data-toggle="modal"><img class="card-img-top" src="./images/1.png" alt="Card image cap"></a>
+                        <!-- Modal -->
+                        <div class="modal" id="ProjetModal1" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Project One</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Information about my first project goes here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">I haven't done anything yet, but this is where I'd put information about a project.</p>
+                        </div>
+                    </div>
+                    <div class="port card text-center" style="width: 18rem;">
+                        <!--Make the picture link to the modal -->
+                        <a href="#ProjectModal2" role="button" data-toggle="modal"><img class="card-img-top" src="./images/2.png" alt="Card image cap"></a>
+                        <!--Modal -->
+                        <div class="modal" id="ProjectModal2" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Project Two</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Information about my second project goes here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">I haven't done anything yet, but this is where I'd put information about another project.</p>
+                        </div>
+                    </div>
+                    <div class="port card text-center" style="width: 18rem;">
+                        <!--Make the picture link to the modal -->
+                        <a href="#ProjectModal3" role="button" data-toggle="modal"><img class="card-img-top" src="./images/3.png" alt="Card image cap"></a>
+                        <!-- Modal -->
+                        <div class="modal" id="ProjectModal3" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Project Three</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Information about my third project goes here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">I haven't done anything yet, but this is where I'd put information about yet another project.</p>
+                        </div>
+                    </div>
+                    <div class="port card text-center" style="width: 18rem;">
+                        <!--Make the picture link to the modal -->
+                        <a href="#ProjectModal4" role="button" data-toggle="modal"><img class="card-img-top" src="./images/4.png" alt="Card image cap"></a>
+                        <!-- Modal -->
+                        <div class="modal" id="ProjectModal4" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Project Four</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Information about my fourth project goes here.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Project 4</h5>
+                            <p class="card-text">I haven't done anything yet, but this is where I'd put information about a fourth project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio-->
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container-fluid">
+                <h1>Contact</h1>
+                <div class="contact-info">
+                    <p>Connect with me on:</p>
+                    <ul class="list-unstyled list-inline">
+                        <li class="linkedin">
+                            <a href="#" alt="LinkedIn">
+                                <img src="./images/linkedin2.png">
+                            </a>
+                        </li>
+                        <li class="github">
+                            <a href="#" alt="GitHub">
+                                <img src="./images/github2.png">
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#" alt="Facebook">
+                                <img src="./images/facebook2.png">
+                            </a>
+                        </li>
+                    </ul>
+        </section>
+
+        <!-- End Contact -->
+    </div>
+    <!-- Footer -->
+    <section id="footer"></section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/header.js"></script>
+</body>
+</html>
